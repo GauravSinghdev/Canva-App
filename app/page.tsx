@@ -1,12 +1,10 @@
 'use client'
 
-import { FC, useState } from 'react'
+import { useState } from 'react'
 import { useDraw } from '../hooks/useDraw'
 import { ChromePicker } from 'react-color'
 
-interface pageProps {}
-
-const page: FC<pageProps> = ({}) => {
+const page = ({}) => {
   const [color, setColor] = useState<string>('#000')
   const { canvasRef, onMouseDown, clear } = useDraw(drawLine)
 
